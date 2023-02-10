@@ -1,0 +1,10 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.mySlides {
+    display: none;
+    height: 620px;
+    object-fit: cover;
+}

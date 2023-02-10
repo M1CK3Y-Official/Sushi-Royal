@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+box-sizing: border-box;
+
+margin: 0;
+padding: 0;
+}
+
+html{
+font-size: 0.625rem;
+
+scroll-behavior: smooth;
+}
+
+body{
+font-size: 1.6rem;
+
+max-width: 1366px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/* ----- Navigation ----- */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    height: 150px;
+    padding: 0 90px;
+    z-index: 100;
+    background-color: white;
+}
+
+.heading, .heading>a {
+    font-family: 'Atomic Age';
+    font-size: 5.4rem;
+    color: #672D0A;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+}
+
+.menu-link {
+    font-family: 'Nunito';
+    color: #672D0A;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    display: flex;
+    margin-top: 80px;
+}
+
+
+
+/* ----- Section 1 / Bestil bord knap ----- */
+
+.order-btn {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 90px;
+}
+
+.table-btn {
+    border: none;
+    border-radius: 5px;
+
+    font-size: 2rem;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: white;
+
+    width: 230px;
+    height: 60px;
+
+    background-color: #672D0A;
+
+    position: absolute;
+    top: 669px;
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.table-btn:hover {
+    background-color: #EAD1B7;
+    cursor: pointer;
+}
+
+
+
+/* ----- Section 2 / Råvarer ----- */
+
+.sec-2 {
+    margin-top: 70px;
+    padding: 0 90px;
+}
+
+.sec-2-title {
+    color: #672D0A;
+    font-family: 'Nunito';
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.sec-2-p {
+    font-size: 2rem;
+    color: #672D0A;
+    font-family: 'Nunito';
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+    width: 880px;
+    margin: auto;
+    margin-top: 22px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+.readmore-btn {
+    background-color: #672D0A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 60px;
+    font-size: 2rem;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.6px;
+    
+    transition: background-color 250ms ease-in-out;
+}
+
+.readmore-btn:hover {
+    background-color: #EAD1B7;
+    cursor: pointer;
+}
+
+
+
+/* ----- Section 3 / Om Sushi Royal ----- */
+
+.sec-3 {
+    background-image: url('../Project-images/About.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 770px;
+}
+
+.overlay {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.text {
+    padding: 0 90px;
+}
+
+.sec-3-title {
+    font-size: 4rem;
+    color: #672D0A;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    font-family: 'Nunito';
+    padding-top: 60px;
+    padding-bottom: 16px;
+}
+
+.sec-3-p {
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+    font-family: 'Nunito';
+    max-width: 420px;
+    line-height: 27px;
+}
+
+
+
+/* ----- Section 4 / Galleri ----- */
+
+.sec-4 {
+    padding: 0 90px;
+}
+
+.sec-4-title {
+    font-size: 4rem;
+    font-family: 'Nunito';
+    color: #672D0A;
+    letter-spacing: 3.2px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    margin-top: 58px;
+}
+
+.card-price {
+    font-weight: 800;
+    color: #672D0A;
+    margin-top: 30px;
+}
+
+.card {
+    height: 263.17px;
+    max-width: 395px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    line-height: 27px;
+    font-size: 2rem;
+    font-family: 'Nunito';
+    padding: 37px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #672D0A;
+    font-weight: 800;
+}
+
+.card-img {
+    /* width: 395px; */
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-rows: 263.17px 263.17px 263.17px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 170px;
+}
+
+
+
+/* ----- Nyhedsbrev ----- */
+
+.newsletter {
+    padding: 0 90px;
+    background-color: #EAD1B7;
+    height: 358px;
+}
+
+
+.newsletter-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    color: #672D0A;
+    font-family: 'Nunito';
+    padding-top: 57px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 800;
+    color: #672D0A;
+    font-family: 'Nunito';
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+}
+
+input {
+    width: 330px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 1px solid #672D0A;
+}
+
+.send {
+    width: 165px;
+    color: #672D0A;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.send-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send:hover {
+    color: white;
+    background-color: #672D0A;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    
+}
+
+.name-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+/* ----- Footer ----- */
+
+footer {
+    height: 136px;
+    background-color: #672D0A;
+    color: white;
+    padding: 28px 90px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-weight: 700;
+}
+
+.location {
+    font-size: 2rem;
+    font-family: 'Nunito';
+    letter-spacing: 1.6px;
+    line-height: 27px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+    font-family: 'Nunito';
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 248px;
+
+    justify-content: space-evenly;
+}
+
+.fa-phone {
+    font-size: 2.3rem;
+    letter-spacing: 2.56px;
+}
+
+.fa-at {
+    font-size: 2.3rem;
+    letter-spacing: 2.56px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 5rem;
+
+    gap: 20px;
+}
+
+.fa-brands {
+    color: white;
+}
+
